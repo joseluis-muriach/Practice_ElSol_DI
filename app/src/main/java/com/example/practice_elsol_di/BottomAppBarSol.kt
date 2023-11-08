@@ -49,7 +49,9 @@ fun bottomAppBarWhatsApp(navController: NavController) {
     //Esta variable hace un count de las veces que clicas
     var badgeCount by remember { mutableStateOf(0) }
 
+    //Importantisimo el Scaffold, tanto para TOP BAR como BOTTOM BAR
     Scaffold(
+        //Esto también para que se ponga en la parte inferior, si pusieramos TopBar iria arriba
         bottomBar = {
             BottomAppBar(
                 containerColor = Purple40,
